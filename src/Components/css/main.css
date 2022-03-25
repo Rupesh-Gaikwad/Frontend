@@ -1,0 +1,889 @@
+main{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+}
+
+.sidebar{
+    width: 30%;
+    height: auto;
+}
+
+.sidebar ul{
+    width: 90%;
+    height: auto;
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 28.81px;
+    align-items: flex-start;
+    padding: 0px;
+}
+
+.sidebar li{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.5px;
+    font-family: 'Montserrat';
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.sidebar img{
+    width: auto;
+    height: auto;
+}
+
+
+.main_divider{
+    width: 1px;
+    height: inherit;
+    opacity: 15%;
+}
+
+.active{
+    background-color: #E6F4F1;
+
+}
+
+.post_nav_buttons{
+    height: 6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* column-gap: 90px; */
+}
+
+.post_nav_buttons a{
+    width: fit-content;
+    height: fit-content;
+    border-radius: 82px;
+}
+.post_nav_buttons .post_nav{
+    width: fit-content;
+    height: fit-content;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 18px 20px;
+    border-radius: 82px;
+    border: none;
+    background-color: #E6F4F1;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.active_button{
+    background: linear-gradient(96.78deg, rgba(25, 148, 179, 0.75) 0%, #1085A3 100%);
+    color: #ffffff;
+}
+
+.trending_mobile{
+    display: none;
+}
+
+.trending{
+    width: 90%;
+    height: auto;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    padding: 31px 24.9px 26px 24.9px;
+}
+
+.trending .title{
+    display: flex;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    column-gap: 8.3px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.title img{
+    width: 20.75px;
+    height: 20px;
+}
+.hashtags{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.trending p{
+    margin: 0px;
+    padding: 8px 8px;
+    color: #1A8BA7;
+}
+
+/* main post styling area*/
+
+.post{
+    width: 95%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000000;
+    border-radius: 25px;
+    padding: 63px;
+}
+
+.post p{
+    margin: 0px;
+}
+
+.user_info_container{
+    display: flex;
+    column-gap: 30px;
+}
+
+.user_info_container img{
+    width: auto;
+}
+
+.user_info{
+    height: 80%;
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 5px;
+}
+
+#username{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+#post_date{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#connect_btn{
+    width: 99px;
+    height: 21px;
+    background: linear-gradient(96.54deg, rgba(25, 148, 179, 0.75) 0%, rgba(16, 133, 163, 0.98) 100%);
+    border: none;
+    border-radius: 82px;
+    font-family: Lora;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.post_content{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-top: 35px;
+}
+
+.post_additionals{
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+    padding-top: 37px;
+    padding-bottom: 35px;
+}
+
+#user_hashtag{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+color: #1C8CA9;
+}
+
+#looking_for{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.post_additionals button{
+    width: fit-content;
+    border: none;
+    background: rgba(117, 120, 124, 0.2);
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1C8CA9;
+    padding: 2px 8px;
+}
+
+.post hr{
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.user_options{
+    display: flex;
+    justify-content: space-around;
+    padding: 36px 0px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.user_options img{
+    width: auto;
+}
+
+.likes, .comments, .share{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 9px;
+}
+
+#count{
+    font-family: 'Lora';
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #000000;
+}
+
+.comment_section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+}
+
+.add_comment{
+    width: 90%;
+    display: flex;
+    column-gap: 6px;
+    align-items: center;
+
+}
+
+.comment_section img{
+    width: 60px;
+    height: 62px;
+}
+
+.add_comment form{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #000000;
+    border-radius: 159px;
+    padding: 15px 41px;
+}
+
+.add_comment textarea{
+    flex: 70%;
+}
+
+.emoji_n_send{
+    flex: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#smile_emoji{
+    width: auto;
+    height: auto;
+}
+
+.add_comment #send_button{
+    width: auto;
+}
+
+.add_comment textarea{
+    height: fit-content;
+    border: none;
+    outline: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    resize: none;
+}
+
+
+.comments_on_post, .reply_on_comment{
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 35px;
+    column-gap: 6px;
+}
+
+.comment{
+    width: 90%;
+}
+
+.comment_user_details{
+   display: flex;
+   justify-content: space-between;
+}
+
+.comment_user_details p{
+    width: fit-content;
+}
+
+.comment_user_info{
+    border: 2px solid #000000;
+    border-radius: 25px;
+    padding-top: 14px;
+    padding-left: 31px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+}
+
+#comment_user_name{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 129.9%;
+}
+
+#comment_time{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.comment_user_details{
+    display: flex;
+}
+
+#original_comment_content{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 14px;
+}
+
+.comment_options{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    margin-top: 20px;
+    margin-left: 5%;
+}
+
+.comment_options img{
+    width: 24px;
+    height: 24px;
+}
+
+.reply_on_comment{
+    width: 80%;
+    align-self:flex-end;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display:flex;
+}
+
+@media (max-width: 1023px) {
+
+    main{
+        width: 90%;
+    }
+    .sidebar{
+        width: 40%;
+    }
+
+    .sidebar ul{
+        width: 100%;
+        padding: 0px;
+    }
+
+    .sidebar li{
+        width: 95%;
+        display: flex;
+        column-gap: 10px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19.5px;
+        font-family: 'Montserrat';
+        padding: 8px;
+        padding-right: 2px;
+        border-radius: 10px;
+    }
+
+    .sidebar img{
+        width: 24px;
+        height: 24px;
+    }
+
+    .sidebar ul{
+        margin-top: 26px;
+    }
+
+    /* Post options buttons at top stylings */
+    .post_nav_buttons{
+        column-gap: 32px;
+
+    }
+
+    .post_nav_buttons .post_nav{
+        width: fit-content;
+        height: fit-content;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        border-radius: 82px;
+        border: none;
+        background-color: #E6F4F1;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: center;
+    
+    
+    }
+
+    /* Main Post styling */
+
+    .post{
+        width: 90%;
+        padding: 32px 16px;
+    }
+
+    #add_new_post_btn{
+        width: fit-content;
+    }
+
+    .user_info_container img{
+        width: 62px;
+        height: 62px;
+    }
+
+    .user_info{
+        display: flex;
+        justify-content: center;
+        row-gap: 1px;
+    }
+
+    #username{
+        font-size: 18px;
+    }
+    #post_date{
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    #connect_btn{
+        width: 73px;
+        height: 15px;
+        font-family: 'Lora';
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+    }
+
+    #connect_btn{
+        margin: 0px;
+    }
+    
+    .post_content p{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .post_additionals{
+        height: auto;
+        margin: 28px 0px 16px 0px;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    #user_hashtag{
+        font-size: 12px;
+        line-height: 15px;
+        margin-bottom: 20px;
+    }
+
+    #looking_for{
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .post_additionals button{
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .likes, .comments, .share {
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 500;
+    }
+
+    #count{
+        font-family: 'Lora';
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        font-weight: 600;
+        color: #000000;
+    }
+
+    .user_options{
+        padding: 19px 0px;
+    }
+
+    .user_options img{
+        width: 16px;
+        height: 16px;
+    }
+
+    .add_comment{
+        display: flex;
+        align-items: flex-start;
+    }
+    
+
+    .add_comment form{
+        height: 50px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        padding-right: 5px;
+    }
+
+    .emoji_n_send{
+        flex: 30%;
+        width: 32px;
+        height: 32px;
+    }
+
+
+    .add_comment form textarea{
+        flex: 70%;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .comment_section .comment{
+        height: auto;
+    }
+
+    .comments_on_post{
+        margin-top: 23px;
+    }
+
+    .reply_on_comment_show .comment{
+        margin-top: 20px;
+    }
+
+    .comment .comment_options{
+        margin-top: 10px;
+    }
+    #comment_user_name{
+        font-size: 18px;
+        line-height: 129.9%;
+    }
+
+    #comment_time{
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    #original_comment_content{
+        font-size: 12px;
+        line-height: 15px;
+        padding-top: 2px;
+        margin: 0px;
+    }
+
+    .comment_options{
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .comment_options img{
+        width: 12px;
+        height: 12px;
+    }
+
+    .comment_user_info{
+        padding: 3px 8px 18px 20px;
+    }
+
+    .trending{
+        padding: 20px;
+    }
+    .trending img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .comment_user_info{
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+    }
+
+    .reply_on_comment {
+        margin-top: 20px;
+    }
+
+    .add_comment form{
+        border-radius: 10px;
+        padding: 17px;
+        padding-right: 5px;
+    }
+
+    .comment_section img{
+        width: 30px;
+        height: 30px;
+    }
+
+    #smile_emoji{
+        width: 20px;
+        height: 20px;
+    }
+
+    #send_button{
+        width: 20px;
+        height: 20px;
+    }
+
+    .comment_options img{
+        width: 12px;
+        height: 12px;
+    }
+
+}
+ 
+@media (max-width: 768px){
+    
+}
+
+@media (max-width: 428px){
+    
+    .sidebar{
+        display: none;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* .post_nav_buttons{
+        display: flex;
+        justify-content: center;
+    } */
+    .post_nav_buttons .post_nav{
+        width: fit-content;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .main_divider{
+        display: none;
+    }
+
+    /* Trending section */
+
+    .trending_mobile{
+        width: 100%;
+        margin: auto;
+        background: rgba(231, 240, 242, 0.2);
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 18px;
+        margin-bottom: 18px;
+        padding: 28px 26px;
+        
+    }
+
+    .trending_mobile_head{
+        display: flex;
+        align-items: center;
+    }
+
+    .m_trending_cart{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 10px;
+    }
+
+    .m_trending_cart img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .m_trending_cart p{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        margin: 0px;
+    }
+
+    .arrow_container{
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #E6F4F1;
+        padding: 6px;
+        padding-bottom: 12px;
+        border-radius: 50%;
+        transform: none;
+    }
+
+    #drp_arw{
+        width: auto;
+        margin-bottom: -8px;
+    }
+
+    .trending_mobile .hashtags{
+        width: 100%;
+        margin: auto;
+        border-top: 1px solid gray;
+        margin-top: 20px;
+    }
+
+
+    /* main post styling mobile */
+    .post_nav_buttons{
+        column-gap: 10px;
+
+    }
+
+    .post_nav_buttons Button{
+        width: fit-content;
+        height: fit-content;
+        
+    }
+
+    .post{
+        width: 100%;
+    }
+
+    .comment_user_info{
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+        padding-bottom: 10px;
+    }
+
+    .add_comment form{
+        border-radius: 10px;
+        padding: 17px;
+        padding-right: 5px;
+    }
+
+    .emoji_n_send{
+        flex: 40%;
+        column-gap: 15px;
+        width: 32px;
+        height: 32px;
+    }
+
+    .comment_section img{
+        width: 30px;
+        height: 30px;
+    }
+
+    #smile_emoji{
+        width: 20px;
+        height: 20px;
+    }
+
+    #send_button{
+        width: 20px;
+        height: 20px;
+    }
+
+    #comment_user_name{
+        font-size: 16px;
+    }
+
+    .comment_options img{
+        width: 12px;
+        height: 12px;
+    }
+
+    #original_comment_content{
+        margin-top: 5px;
+    }
+}
