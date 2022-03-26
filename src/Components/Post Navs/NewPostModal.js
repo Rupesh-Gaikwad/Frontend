@@ -1,14 +1,32 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import '../css/newpostmodal.css'
+import { useNavigate } from 'react-router-dom';
+
 export default function NewPostModal() {
 
+const navigate = useNavigate();
+  let menuRef = useRef();
   const handleSubmit = (event) =>{
     alert('Post published successfully!');
     // event.preventDefault();
   }
+
+  useEffect( () => {
+      let handler = (event) => {
+        if( !menuRef.current.contains(event.target)){
+          navigate('/AllPost');
+        }
+      };
+      document.addEventListener("mousedown", handler);
+
+      return () => {
+        document.removeEventListener("mousedown", handler);
+      };
+  });
+
   return (
     <div className="bg_modal">
-      <div className="newpost_modal">
+      <div ref={menuRef} className="newpost_modal">
           <h1>Add Your Requirement</h1>
           <form onSubmit={handleSubmit}>
             <div className="requirement_container">
@@ -16,7 +34,7 @@ export default function NewPostModal() {
               <span id="requirement_desc">0/300 Character</span>
             </div>
             <div className="additional_container">
-            <input id="tags" type="text" placeholder="Tags (Press enter to add multiple keywords)"/>
+            <textarea id="tags" placeholder="Tags (Press enter to add multiple keywords)" rows={1} maxLength={100}/>
             <select className="drp_menu" id="business" name="business">
               <option label="Looking for"></option>
               <option value="First Choice">First Choice</option>
