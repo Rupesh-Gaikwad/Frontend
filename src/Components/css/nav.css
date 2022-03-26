@@ -1,4 +1,4 @@
-nav{
+nav{ 
     width: 100%;
     height: 6.25rem;
     margin: 0px;
@@ -9,6 +9,8 @@ nav{
     font-weight: 400;
     font-size: 1.25rem;
     line-height: 1.5rem;
+    background-color: white;
+    z-index: 100;
 }
 
 .nav-content{
@@ -33,6 +35,7 @@ nav{
     column-gap: 80px;
     color: #333333;
     padding: 0px;
+    margin: 0px;
 }
 
 li{
@@ -52,6 +55,14 @@ li{
     border-radius: 82px;
     padding:  0px 10px;
 }
+
+.menu_user{
+    display: none;
+}
+.close_menu{
+    display: none;
+}
+
 #user_profile{
     width: 45px;
     height: 47px;
@@ -88,6 +99,12 @@ li{
     
 }
 
+#close_menu{
+    display: none;
+}
+
+
+
 @media (max-width: 1023px){
     .nav-content{
         width: 90%;
@@ -109,13 +126,51 @@ li{
 
 @media (max-width: 768px){
 
-    .nav-content ul, .user{
+    .user{
         display: none;
+    }
+
+    .nav_links{
+        z-index: 100;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 50%;
+        height: auto;
+        background-color: #ffffff;
+        padding-top: 70px;
+        padding-bottom: 50px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+        display: none;
+    }
+
+    .nav_links_active{
+        display: flex;
+    }
+
+    .nav_links ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        row-gap: 50px;
     }
 
     .hamburger_menu{
         display: flex;
     }
+
+    #close_menu{
+        width: 50px;
+        height: 50px;
+       padding: 10px 20px;
+       align-self: center;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: flex;
+        color: #000000;
+    }
+
 }
 
 @media (max-width: 428px){
