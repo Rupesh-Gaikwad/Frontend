@@ -1,10 +1,14 @@
 import './App.css';
-import Post from './Components/Post';
+import Navbar from './Components/Post_Components/Navbar';
+import Post from './Components/Post_Components/Post';
+import User from './Components/User_Profile_Component/User';
 
 function App() {
   return (
     <div>
-      <Post/>
+      <Navbar/>
+      {/* <Post/> */}
+      <User/>
     </div>
   );
 }

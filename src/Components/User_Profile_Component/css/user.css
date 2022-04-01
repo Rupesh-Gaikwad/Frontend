@@ -1,0 +1,306 @@
+
+/* User profile relates styling */
+.user_profile_component{
+    width: 100%;
+    height: auto;
+}
+
+.user_pic_container{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.user_profile_bg{
+    width: 100%;
+    height: auto;
+}
+
+
+.user_pic_inner_container{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    width: fit-content;
+    height: fit-content;
+}
+.user_profile_picture{
+    width: 297px;
+    height: 309px;
+    filter: drop-shadow(0px 8px 4px rgba(0, 0, 0, 0.25));
+}
+
+#cam{
+    width: auto;
+    height: auto;
+
+    position: absolute;
+    bottom: 38px;
+    right: 40px;
+}
+
+#edit_profile_pic{
+    position: absolute;
+    right: 12%;
+    top: 50px;
+
+    width: 30px;
+    height: 30px;
+}
+
+
+/* User information relates styling */
+
+.User_user_info{
+    width: 80%;
+    margin: auto;
+    margin-top: 58px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.User_user_info p{
+    padding: 0px;
+    margin: 0px;
+}
+
+.user_left_side{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+
+.username_container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 30px;
+}
+
+#User_username{
+    width: fit-content;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    /* identical to box height */
+    color: #0E0D0D;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+#uni_loc{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #0E0D0D;
+
+}
+
+#university_name{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.username_container img{
+    width: 47px;
+    height: 47px;
+}
+
+.social_count{
+    margin-top: 40px;
+    margin-bottom: 66px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #1950B7;
+
+    display: flex;
+    column-gap: 140px
+}
+
+.social_count p{
+    width: fit-content;
+}
+
+.choice_btns{
+    display: flex;
+    column-gap: 50px
+}
+
+#try_it_btn{
+    width: fit-content;
+    background: #1A66CA;
+    border-radius: 30px;
+    padding: 18px 40px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
+
+#buy_plan_btn{
+    width: fit-content;
+    border: 2px solid #1A66CA;
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding: 18px 24px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+    color: #000000;
+}
+
+.user_right_side{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 53px;
+    justify-content: flex-end;
+}
+
+.user_right_side img{
+    width: 47px;
+    height: 47px;
+    align-self: flex-end;
+    margin-right: 7%;
+    margin-top: 2%;
+}
+
+.cofounders_hub{
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 18px;
+}
+
+.founders_logo_container{
+    width: 37px;
+    height: 37px;
+    position: relative;
+}
+
+#logo_bg{
+    width: 37px;
+    height: 37px;
+}
+
+#pol1{
+
+    width: 17.76px;
+    height: 17.76px;
+    position: absolute;
+    top: 12.95px;
+    left: 5.18px;
+}
+
+#pol2{
+
+    width: 17.76px;
+    height: 17.76px;
+    position: absolute;
+    top: 9.62px;
+    left: 12.21px;
+}
+
+
+.cofounders_hub p{
+    width: fit-content;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+}
+
+.cofounders_hub img{
+    width: 47px;
+    height: 47px;
+}
+
+@media (max-width: 1025px){
+
+    .user_profile_picture{
+        width: 200px;
+        height: 205px;
+    }
+
+    #cam{
+        width: 28px;
+        height: 20px;
+    
+        position: absolute;
+        bottom: 26px;
+        right: 22px;
+    }
+}
+
+@media (max-width: 768px){
+    .user_profile_picture{
+        width: 150px;
+        height: 153px;
+    }
+
+    #cam{
+        width: 20px;
+        height: 15px;
+    
+        position: absolute;
+        bottom: 20px;
+        right: 22px;
+    }
+
+    #edit_profile_pic{
+        position: absolute;
+        right: 7%;
+        top: 30px;
+
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 428px){
+    .user_profile_picture{
+        width: 100px;
+        height: 102px;
+    }
+
+    #cam{
+        position: absolute;
+        bottom: 12px;
+        right: 12px;
+    }
+
+    #edit_profile_pic{
+        position: absolute;
+        right: 7%;
+        top: 20px;
+    }
+}
