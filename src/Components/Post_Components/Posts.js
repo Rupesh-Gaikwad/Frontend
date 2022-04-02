@@ -1,9 +1,7 @@
 import React from 'react'
 import user_profile from './images/user.png'
-import like from './images/like.png'
-import comment from './images/comment.png'
-import share from './images/direct-instagram.png'
 import CommentSection from './CommentSection'
+import LikeSharePanel from './LikeSharePanel'
 export default function Posts() {
   return (
     <div className="post">
@@ -26,17 +24,7 @@ export default function Posts() {
         <button>Tech Co founder Developer</button>
       </div>
       <hr/>
-      <div className="user_options">
-        <div className="likes">
-          <img src={like} alt="likes"/><span id="count">3</span> Likes
-        </div>
-        <div className="comments">
-        <img src={comment} alt="likes"/><span id="count"> 34</span>Comments
-        </div>
-        <div className="share">
-        <img src={share} alt="likes"/>Share
-        </div>
-      </div>
+      <LikeSharePanel/>
       <hr/>
       <CommentSection/>
     </div>

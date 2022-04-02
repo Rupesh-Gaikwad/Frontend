@@ -2,6 +2,7 @@ import React from 'react'
 import './css/section.css'
 import edit from './images/edit.svg'
 import Posts from '../Post_Components/Posts'
+import UserPolls from './UserPolls'
 
 export default function Section(props) {
   return (
@@ -54,6 +55,15 @@ export default function Section(props) {
                 <button id="see_all_btn">See All</button>
             </div>
           )
+        }
+
+        {props.sec_title === "Polls" &&
+          (
+            <div>
+              <UserPolls/>
+            </div>
+          )
+
         }
     </div>
   )

@@ -1,0 +1,89 @@
+
+.User_polls_section{
+    width: 100%;
+    margin-top: 100px;
+    background: #FFFFFF;
+    border: 1px solid black;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    padding: 50px 30px;
+}
+
+.User_polls_section p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #434343;
+    margin: 0px;
+    padding: 0px;
+}
+
+#user_polls_hashtags{
+    color: #1A66CA;
+}
+
+
+.connections_box{
+    width: 75%;
+    margin-top: 50px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    padding: 35px;
+}
+
+.connections_box p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    color: #000000;
+}
+
+.user_polls_percentage{
+    margin-bottom: 30px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.percentage_container{
+    width: 80%;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 159px;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+
+}
+
+.actual_percentage{
+    background: rgba(80, 173, 196, 0.55);
+    border: 1px solid #1085A3;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 159px;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.percentage_number{
+    width: fit-content;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+
+
+
+#user_polls_divider{
+    height: 1px;
+    color: black;
+}
