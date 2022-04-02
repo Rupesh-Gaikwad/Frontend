@@ -244,7 +244,41 @@
     height: 47px;
 }
 
-@media (max-width: 1025px){
+@media (max-width: 1310px) {
+    .cofounders_hub p{
+        font-size: 22px;
+        
+    }
+
+    .cofounders_hub img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .social_count{  
+        display: flex;
+        column-gap: 85px
+    }
+
+    #try_it_btn{
+        font-size: 14px;
+        padding: 12px 30px;
+
+    }
+    
+    #buy_plan_btn{
+        font-size: 14px;
+        padding: 12px 25px;
+
+    }
+    
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+
+    .User_user_info{
+        margin-top: 40px;
+    }
 
     .user_profile_picture{
         width: 200px;
@@ -259,43 +293,88 @@
         bottom: 26px;
         right: 22px;
     }
+
+    #User_username{
+        font-size: 30px; 
+    }
+
+    .username_container img{
+        width: 30px;
+        height: 30px;
+    }
+    
+    #university_name,  #uni_loc{
+        font-size: 20px;
+
+    }
+
+    .social_count{
+        font-size: 18px;
+        column-gap: 50px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .choice_btns{
+        column-gap: 40px;
+    }
+
+    #try_it_btn{
+        font-size: 12px;
+        padding: 8px 10px;
+
+    }
+    
+    #buy_plan_btn{
+        font-size: 12px;
+        padding: 8px 10px;
+
+    }
+
+    .user_right_side img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .founders_logo_container #logo_bg{
+        width: 30px;
+        height: 30px;
+    }
+
+    #pol1{
+
+        width: 17.76px;
+        height: 17.76px;
+        position: absolute;
+        top: 6.48px;
+        left: 3.18px;
+    }
+    
+    #pol2{
+    
+        width: 17.76px;
+        height: 17.76px;
+        position: absolute;
+        top: 4.81px;
+        left: 10.21px;
+    }
+
+    .cofounders_hub p{
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 768px){
-    .user_profile_picture{
-        width: 150px;
-        height: 153px;
-    }
-
-    #cam{
-        width: 20px;
-        height: 15px;
-    
-        position: absolute;
-        bottom: 20px;
-        right: 22px;
-    }
-
-    #edit_profile_pic{
-        position: absolute;
-        right: 7%;
-        top: 30px;
-
-        width: 20px;
-        height: 20px;
-    }
-}
-
-@media (max-width: 428px){
     .user_profile_picture{
         width: 100px;
         height: 102px;
     }
 
     #cam{
+        width: 22px;
         position: absolute;
-        bottom: 12px;
-        right: 12px;
+        bottom: 10px;
+        right: 10px;
     }
 
     #edit_profile_pic{
@@ -303,4 +382,117 @@
         right: 7%;
         top: 20px;
     }
+
+    .User_user_info{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        position: relative;
+    }
+
+    .user_left_side{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 0px;
+    }
+
+    #User_username{
+        font-size: 24px;
+    }
+
+    .username_container{
+        padding: 0px;
+        display: flex;
+        column-gap: 10px;
+    }
+    .username_container img{
+        width: 20px;
+    }
+
+    .user_right_side img{
+        width: 20px;
+        height: 20px;
+        margin-right: 0px;
+        position: absolute;
+        top: 15px;
+        right: 0px;
+    }
+
+    #uni_loc, #university_name{
+        font-size: 16px;
+    }
+
+    .social_count{
+        margin-top: 30px;
+        margin-bottom: 20px;
+        display: flex;
+        column-gap: 45px;
+    }
+
+    .social_count p{
+        width: fit-content;
+        font-size: 16px;
+
+    }
+
+    .choice_btns{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        column-gap: normal;
+    }
+
+    #try_it_btn, #buy_plan_btn{
+        width: fit-content;
+        font-size: 10px;
+        padding: 2px 10px;
+    }
+
+    .cofounders_hub{
+        width: fit-content;
+        height: fit-content;
+        
+        position: absolute;
+        top: 55px;
+        right: 0px;
+
+        display: flex;
+        column-gap: 0px;
+    }
+
+    #logo_bg{
+        width: 30px;
+        height: 30px;
+        align-self: center;
+
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+
+    #pol1{
+
+        width: 12.76px;
+        height: 12.76px;
+        position: absolute;
+        top: 9.48px;
+        left: 5.18px;
+    }
+    
+    #pol2{
+    
+        width: 12.76px;
+        height: 12.76px;
+        position: absolute;
+        top: 7.81px;
+        left: 12.21px;
+    }
+
+    .cofounders_hub p{
+        font-size: 12px;
+    }
+
+
 }

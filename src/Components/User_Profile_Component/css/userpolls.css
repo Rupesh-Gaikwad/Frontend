@@ -80,7 +80,7 @@
     border-radius: 159px;
     outline: 1px solid #1085A3;
     padding: 5px 0px;
-    padding-left: 31px;
+    padding-left: 10px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -107,7 +107,7 @@
 }
 
 .like_share_component{
-    width: 75%;
+    width: 90%;
     margin: auto;
 }
 
@@ -150,4 +150,80 @@
     /* identical to box height */
     color: #FFFFFF;
     margin: 50px auto;
+}
+
+@media (max-width: 1310px){
+    .connections_box{
+        width: 85%;
+    }
+
+    .polls_comments_section{
+        width: 80%;
+    }
+
+    #total_comments_on_post{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .connections_box{
+        width: 100%;
+    }
+
+    .polls_comments_section{
+        width: 90%;
+    }
+
+    #total_comments_on_post{
+        width: 95%;
+    }
+
+    #polls_see_all_btn{
+        padding: 10px 50px;   
+        font-size: 25px;
+    }
+   
+}
+
+@media screen and (max-width: 767px){
+
+    .connections_box{
+        width: 100%;
+    }
+
+    .User_polls_section p{
+        font-size: 16px;
+    }
+
+    .connections_box{
+        padding: 10px 20px;
+    }
+
+    .actual_percentage{
+        font-size: 10px;
+    }
+
+    #polls_heading{
+        font-size: 16px;
+    }
+
+    .polls_comments_section{
+        width: 90%;
+    }
+
+    #user_polls_votes{
+        font-size: 12px;
+    }
+
+    #total_comments_on_post{
+        width: 95%;
+        font-size: 16px;
+    }
+
+    #polls_see_all_btn{
+        padding: 8px 40px;   
+        font-size: 25px;
+    }
+    
 }
