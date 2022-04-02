@@ -5,10 +5,11 @@ import './css/userpolls.css'
 
 function UserPolls() {
   return (
+    <div className="polls_section_container">
     <div className="User_polls_section">
         <p>New business connections today?<span id="user_polls_hashtags">#business#marketing</span></p>
         <div className="connections_box">
-            <p>Are you open to making new business connection today?</p>
+            <p id="polls_heading">Are you open to making new business connection today?</p>
             <div className="user_polls_percentage">
                 <div className="percentage_container">
                     <div className="actual_percentage" style={{width: "75%"}}>Yes</div>
@@ -34,10 +35,17 @@ function UserPolls() {
                 </div>
             </div>
             <p id="user_polls_votes">{200} votes. {`Poll closed`}</p>
+            <div className="like_share_component">
             <LikeSharePanel/>
+            </div>
         </div>
-        <hr id="user_polls_divider"/>
+        <p id="total_comments_on_post">34 Comments</p>
+        <div id="user_polls_divider"></div>
+        <div className="polls_comments_section">
         <CommentSection/>
+        </div>        
+    </div>
+    <button id="polls_see_all_btn">See All</button>
     </div>
   )
 }
