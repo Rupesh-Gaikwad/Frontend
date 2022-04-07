@@ -15,7 +15,7 @@
 
 }
 
-.sec_title img{
+.sec_title img, .sec_title > a{
     width: 47px;
     height: 47px;
     margin-right: 3%;

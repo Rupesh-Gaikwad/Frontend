@@ -8,7 +8,6 @@ import PostNav from './PostNav'
 export default function MainPost() {
   return (
     <div className="main-post-area">
-      <BrowserRouter>
       <PostNav/>
       <Routes>
           <Route path="/" element={<AllPost/>}/>
@@ -16,7 +15,6 @@ export default function MainPost() {
           <Route path="YourPost" element={<YourPost />} />
           <Route path="AddNewPost" element={<AddNewPost />} />
       </Routes>
-    </BrowserRouter>
   </div>
 
   )

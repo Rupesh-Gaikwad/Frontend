@@ -11,7 +11,6 @@ export default function PostNav()  {
             <Link to="/YourPost"><p className={`post_nav ${currentPath === "/YourPost" ? "active_button" : ""}`}>Your Post</p></Link>
             <Link to="/AddNewPost"><p id="add_new_post_btn" className={`post_nav ${currentPath === "/AddNewPost" ? "active_button" : ""}`}>Add new post</p></Link>
         </div>
-        <Outlet/>
     </div>
   )
 }

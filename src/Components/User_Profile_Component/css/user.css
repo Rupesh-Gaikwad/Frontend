@@ -333,7 +333,7 @@
 
     .user_right_side img{
         width: 30px;
-        height: 30px;
+        height: 30px;  
     }
 
     .founders_logo_container #logo_bg{
@@ -378,6 +378,8 @@
     }
 
     #edit_profile_pic{
+        width: 20px;
+        height: 20px;
         position: absolute;
         right: 7%;
         top: 20px;
@@ -440,8 +442,7 @@
     .choice_btns{
         width: 100%;
         display: flex;
-        justify-content: space-between;
-        column-gap: normal;
+        column-gap: 40px;
     }
 
     #try_it_btn, #buy_plan_btn{

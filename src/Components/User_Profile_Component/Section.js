@@ -1,15 +1,70 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './css/section.css'
 import edit from './images/edit.svg'
 import Posts from '../Post_Components/Posts'
 import UserPolls from './UserPolls'
+import { Link } from 'react-router-dom'
+import AboutMeModal from './EditModals/AboutMeModal'
+import EducationModal from './EditModals/EducationModal'
+import SkillsModal from './EditModals/SkillsModal'
 
 export default function Section(props) {
+
+  // const [editUserOpen, setEditUser ] = useState(false);
+  const [editAboutMeOpen, setEditAboutMe ] = useState(false);
+  const [editEducationOpen, setEditEducation ] = useState(false);
+  const [editSkillsOpen, setEditSkills ] = useState(false);
+  // const [editPostOpen, setEditPost ] = useState(false);
+  // const [editEditPolls, setEditPolls ] = useState(false);
+  
+  const [modalOpen, setModalOpen] = useState(true);
+
+  const getId = (event) =>{
+
+    const currentModalId = event.target.id;
+    switch(currentModalId){
+      case "edit_about_me":
+        setEditAboutMe(true); 
+        break;
+      case "edit_education":
+        setEditEducation(true);
+        break;
+      case "edit_skills":
+        setEditSkills(true);
+        break;
+      // case "edit_posts":
+      //   setEditPost(true);
+      //   break;
+      // case "edit_polls":
+      //   setEditPolls(true);
+      //   break;
+
+    }
+    setModalOpen(true);
+
+    if(currentModalId !== "edit_posts" && currentModalId !== "edit_polls")
+      document.body.style.overflow = "hidden";
+
+  }
+
+  const changeModalState = () =>{
+    setModalOpen(!modalOpen);
+
+    /*making all modals invisible */
+    setEditAboutMe(false);
+    setEditEducation(false);
+    setEditSkills(false);
+    // setEditPost(false);
+    // setEditPolls(false);
+
+    document.body.style.overflow = "auto";
+  }
+
   return (
     <div className="section">
         <div className="sec_title">
           <p>{props.sec_title}</p>
-          <img src={edit} alt="edit"/>
+          <Link to={`${props.id}`}><img id={props.id} src={edit} alt="edit" onClick={getId}/></Link>
         </div>
         {props.sec_title === "About me" &&
         ( 
@@ -65,6 +120,12 @@ export default function Section(props) {
           )
 
         }
+
+        {editAboutMeOpen && modalOpen && <AboutMeModal updateModal={changeModalState}/>}
+        {editEducationOpen && modalOpen && <EducationModal updateModal={changeModalState}/>}
+        {editSkillsOpen && modalOpen && <SkillsModal skills={props.content} updateModal={changeModalState}/>}
+
+
     </div>
   )
 }

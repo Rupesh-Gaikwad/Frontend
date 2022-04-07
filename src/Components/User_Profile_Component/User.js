@@ -9,6 +9,8 @@ import cofounder_logo from './images/cofounder_logo.png'
 import pol1 from './images/Polygon1.png'
 import pol2 from './images/Polygon2.png'
 import Section from './Section'
+import { Routes, Route } from 'react-router-dom'
+import AboutMeModal from './EditModals/AboutMeModal'
 
 
 
@@ -67,7 +69,7 @@ export default function User() {
           </div>
 
           <div className="user_right_side">
-              <img src={edit} alt="edit"/>
+              <img id="edit_user_info" src={edit} alt="edit"/>
               
             <div className="cofounders_hub">
             <div className="founders_logo_container">
@@ -80,11 +82,11 @@ export default function User() {
           </div>
         </div>
 
-      <Section sec_title="About me" content="My name is Mehan Fox. I graduated from MIT a month ago. Now, I am looking for my first full-time job. I have been working as a freelance web developer for the last three years and cooperated with several startups. I cannot say with 100% confidence where I see myself in five years or what my big career goal is. The world is changing rapidly, and I don’t have enough professional experience to be certain about such things."/>
-      <Section sec_title="Education" content={education}/>
-      <Section sec_title="Skills" content={skills}/>
-      <Section sec_title="Post" content=""/>
-      <Section sec_title="Polls" content=""/>
+      <Section id="edit_about_me" sec_title="About me" content="My name is Mehan Fox. I graduated from MIT a month ago. Now, I am looking for my first full-time job. I have been working as a freelance web developer for the last three years and cooperated with several startups. I cannot say with 100% confidence where I see myself in five years or what my big career goal is. The world is changing rapidly, and I don’t have enough professional experience to be certain about such things." />
+      <Section id="edit_education" sec_title="Education" content={education} />
+      <Section id="edit_skills" sec_title="Skills" content={skills} />
+      <Section id="edit_posts" sec_title="Post" content="" />
+      <Section id="edit_polls" sec_title="Polls" content="" />
     </div>
     
   )
