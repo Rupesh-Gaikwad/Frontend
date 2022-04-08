@@ -122,7 +122,7 @@ export default function Section(props) {
         }
 
         {editAboutMeOpen && modalOpen && <AboutMeModal updateModal={changeModalState}/>}
-        {editEducationOpen && modalOpen && <EducationModal updateModal={changeModalState}/>}
+        {editEducationOpen && modalOpen && <EducationModal userEdu={props.content}  updateModal={changeModalState}/>}
         {editSkillsOpen && modalOpen && <SkillsModal skills={props.content} updateModal={changeModalState}/>}
 
 

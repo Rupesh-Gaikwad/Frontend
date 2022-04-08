@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import user_bg from './images/user_bg.svg'
 import user_pic from './images/user_profile_pic.png'
 import './css/user.css'
@@ -9,13 +9,19 @@ import cofounder_logo from './images/cofounder_logo.png'
 import pol1 from './images/Polygon1.png'
 import pol2 from './images/Polygon2.png'
 import Section from './Section'
-import { Routes, Route } from 'react-router-dom'
-import AboutMeModal from './EditModals/AboutMeModal'
+import UserInfoModal from './EditModals/UserInfoModal'
 
 
 
 
 export default function User() {
+
+  const [userModalOpen, setUserModalOpen] = useState(false);
+
+  const updateModal = () =>{
+    setUserModalOpen(!userModalOpen);
+    document.body.style.overflow = "hidden";
+  }
 
   const skills = ["Art", "Gentrate Ideas", "Gentrate Ideas", "Gentrate Ideas"];
   const education = [{
@@ -69,7 +75,7 @@ export default function User() {
           </div>
 
           <div className="user_right_side">
-              <img id="edit_user_info" src={edit} alt="edit"/>
+              <img id="edit_user_info" src={edit} alt="edit" onClick={updateModal}/>
               
             <div className="cofounders_hub">
             <div className="founders_logo_container">
@@ -87,6 +93,7 @@ export default function User() {
       <Section id="edit_skills" sec_title="Skills" content={skills} />
       <Section id="edit_posts" sec_title="Post" content="" />
       <Section id="edit_polls" sec_title="Polls" content="" />
+      {userModalOpen && <UserInfoModal updateModalState={updateModal}/>}
     </div>
     
   )

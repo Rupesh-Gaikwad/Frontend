@@ -15,10 +15,16 @@
 
 }
 
-.sec_title img, .sec_title > a{
+.sec_title> a{
+    width: fit-content;
+    margin-right: 3%;
+}
+
+.sec_title img{
     width: 47px;
     height: 47px;
     margin-right: 3%;
+    align-self: flex-end;
 }
 
 .sec_title p{
@@ -184,6 +190,12 @@
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     
+
+    .sec_title> a{
+        width: fit-content;
+        margin-right: 0%;
+    }
+    
     .sec_title img{
         width: 30px;
         height: 30px;
@@ -221,6 +233,11 @@
     .sec_title p{
         font-size: 18px;
         padding: 10px 30px;
+    }
+
+    .sec_title> a{
+        width: fit-content;
+        margin-right: 0%;
     }
 
     .sec_title img{

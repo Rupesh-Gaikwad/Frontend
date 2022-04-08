@@ -14,7 +14,7 @@ export default function MainPost() {
       <BrowserRouter>
       <Navbar/>
       <Routes>
-          <Route path="/" element={<Post/>}>
+          <Route path="/*" element={<Post/>}>
             <Route index element={<AllPost/>}/>
             <Route path="AllPost" element={<AllPost/>} />
             <Route path="YourPost" element={<YourPost />} />
