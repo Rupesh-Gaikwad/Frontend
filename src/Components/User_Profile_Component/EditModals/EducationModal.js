@@ -4,6 +4,7 @@ import '../css/modal.css'
 import cross from '../images/delete_cross.svg'
 import edit from '../images/edit.svg'
 import add_edu from '../images/add_edu.svg'
+import { Link } from 'react-router-dom';
 
 
 function EducationModal(props) {
@@ -49,9 +50,11 @@ function EducationModal(props) {
           <img src={edit} alt="edit"/>
         </div>)
       })}
-      <div className="add_education_btn">
+      <Link to="add_education">
+      <div className="add_education_btn" onClick={props.addEducation}>
         <img src={add_edu} alt="Add Education"/>
       </div>
+      </Link>
     </div>
   </div>
   )

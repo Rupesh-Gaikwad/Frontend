@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 import AboutMeModal from './EditModals/AboutMeModal'
 import EducationModal from './EditModals/EducationModal'
 import SkillsModal from './EditModals/SkillsModal'
+import AddEducationModal from './EditModals/AddEducationModal'
 
 export default function Section(props) {
 
@@ -14,6 +15,7 @@ export default function Section(props) {
   const [editAboutMeOpen, setEditAboutMe ] = useState(false);
   const [editEducationOpen, setEditEducation ] = useState(false);
   const [editSkillsOpen, setEditSkills ] = useState(false);
+  const [addEducation, setAddEducation] = useState(false);
   // const [editPostOpen, setEditPost ] = useState(false);
   // const [editEditPolls, setEditPolls ] = useState(false);
   
@@ -54,10 +56,16 @@ export default function Section(props) {
     setEditAboutMe(false);
     setEditEducation(false);
     setEditSkills(false);
+    setAddEducation(false);
     // setEditPost(false);
     // setEditPolls(false);
 
     document.body.style.overflow = "auto";
+  }
+
+  const updateAddEducation = ()=>{
+    setAddEducation(!addEducation);
+    setEditEducation(false);
   }
 
   return (
@@ -122,8 +130,9 @@ export default function Section(props) {
         }
 
         {editAboutMeOpen && modalOpen && <AboutMeModal updateModal={changeModalState}/>}
-        {editEducationOpen && modalOpen && <EducationModal userEdu={props.content}  updateModal={changeModalState}/>}
+        {editEducationOpen && modalOpen && <EducationModal userEdu={props.content} addEducation={updateAddEducation} updateModal={changeModalState}/>}
         {editSkillsOpen && modalOpen && <SkillsModal skills={props.content} updateModal={changeModalState}/>}
+        {addEducation && <AddEducationModal updateModal={changeModalState}/>}
 
 
     </div>

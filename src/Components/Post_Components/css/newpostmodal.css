@@ -43,6 +43,10 @@
     overflow-y: auto;
 }
 
+input::placeholder, textarea::placeholder{
+color: rgba(0, 0, 0, 0.5);
+}
+
 
 .newpost_modal h1{
     padding: 0px;
@@ -72,7 +76,6 @@
     font-size: 18px;
     line-height: 22px;
     /* identical to box height */
-    color: rgba(0, 0, 0, 0.5);
     overflow: hidden;
 }
 
@@ -103,7 +106,6 @@
     font-size: 18px;
     line-height: 22px;
     /* identical to box height */
-    color: rgba(0, 0, 0, 0.5);
     outline: none;
     resize: none;
     overflow: hidden;
@@ -120,7 +122,6 @@
     font-size: 18px;
     line-height: 22px;
     /* identical to box height */
-    color: rgba(0, 0, 0, 0.5);
     outline: none;
     background-color: white;
 }

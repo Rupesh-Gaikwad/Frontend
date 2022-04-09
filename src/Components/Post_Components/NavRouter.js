@@ -7,6 +7,7 @@ import User from  '../User_Profile_Component/User'
 import Navbar from './Navbar'
 import Post from './Post'
 import AboutMeModal from '../User_Profile_Component/EditModals/AboutMeModal'
+import AddEducationModal from '../User_Profile_Component/EditModals/AddEducationModal'
 
 export default function MainPost() {
   return (
@@ -22,6 +23,7 @@ export default function MainPost() {
           </Route>
           <Route path="UserProfile/*" element={<User/>}>
             <Route path="edit_about_me" element={<AboutMeModal/>}/>
+            <Route path="add_education" element={<AddEducationModal/>}/>
           </Route>  
       </Routes>
     </BrowserRouter>
