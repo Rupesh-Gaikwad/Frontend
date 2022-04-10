@@ -143,7 +143,7 @@
 
 .choice_btns{
     display: flex;
-    column-gap: 50px
+    column-gap: 20px;
 }
 
 #try_it_btn{
@@ -321,7 +321,7 @@
     }
 
     .choice_btns{
-        column-gap: 40px;
+        column-gap: 20px;
     }
 
     #try_it_btn{

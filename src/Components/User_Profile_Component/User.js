@@ -10,6 +10,7 @@ import pol1 from './images/Polygon1.png'
 import pol2 from './images/Polygon2.png'
 import Section from './Section'
 import UserInfoModal from './EditModals/UserInfoModal'
+import { Link } from 'react-router-dom'
 
 
 
@@ -69,8 +70,8 @@ export default function User() {
               <p>500+ Conections</p>
             </div>
             <div className="choice_btns">
-              <p id="try_it_btn">TRY IT FOR FREE</p>
-              <p id="buy_plan_btn">BUY SUBSCRIBTION PLAN</p>
+              <Link to="/TryForFree"><p id="try_it_btn">TRY IT FOR FREE</p></Link>
+              <Link to="/GoPremium"><p id="buy_plan_btn">BUY SUBSCRIBTION PLAN</p></Link>
             </div>
           </div>
 

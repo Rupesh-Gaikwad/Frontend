@@ -56,7 +56,7 @@ function AddEducationModal(props) {
                   </div>
                   <div className="input_field_line">
                   <label>Description</label>
-                  <textarea type="text" placeholder="Write brief desription"/>
+                  <textarea type="text" placeholder="Write brief desription" maxLength={250}/>
                   </div>
                   <input type="text" placeholder="Add link" />
                   <div id="save_education_btn">

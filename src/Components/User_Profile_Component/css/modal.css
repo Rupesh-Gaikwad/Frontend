@@ -444,7 +444,8 @@ input::placeholder, textarea::placeholder{
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
-    /* identical to box height */
+    resize: none;
+    overflow-y: hidden;
 }
 
 #save_education_btn{
