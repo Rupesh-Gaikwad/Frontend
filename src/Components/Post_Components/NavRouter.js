@@ -9,6 +9,8 @@ import Post from './Post'
 import AboutMeModal from '../User_Profile_Component/EditModals/AboutMeModal'
 import AddEducationModal from '../User_Profile_Component/EditModals/AddEducationModal'
 import Premium from '../PremiumPages/Premium'
+import PremiumPack from '../PremiumPages/PremiumPack'
+import PremiumPlusPack from '../PremiumPages/PremiumPlusPack'
 
 export default function MainPost() {
   return (
@@ -26,7 +28,11 @@ export default function MainPost() {
             <Route path="edit_about_me" element={<AboutMeModal/>}/>
             <Route path="add_education" element={<AddEducationModal/>}/>
           </Route> 
-          <Route path="GoPremium/" element={<Premium/>} />
+          <Route path="GoPremium" element={<Premium/>} />
+          <Route path="Premium" element={<PremiumPack/>}/>
+          <Route path="Premium_Plus" element={<PremiumPlusPack/>}/>
+          
+
       </Routes>
     </BrowserRouter>
   </div>

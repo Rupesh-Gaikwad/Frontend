@@ -2,14 +2,17 @@
     width: 80%;
     margin: auto;
     margin-top: 70px;
+    margin-bottom: 120px;
     display: flex;
     flex-direction: column;
-
     font-family: 'Montserrat';
     font-style: normal;
 }
 
 .go_premium > h2{ 
+    width: 100%;
+    height: fit-content;
+    margin: auto;
     font-weight: 600;
     font-size: 36px;
     line-height: 44px;
@@ -18,12 +21,16 @@
     color: #000000;
 }
 
-p{
+.go_premium p{
     margin: 0px;
     padding: 0px;
 }
 
 .go_premium > p{
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+    margin-top: 25px;
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
@@ -36,9 +43,12 @@ p{
 }
 
 .go_premium .packs_container{
+    width: 100%;
+    height: auto;
     margin-top: 70PX;
     display: flex;
     justify-content: space-between;
+
 }
 
 .pack_detail_container{
@@ -79,7 +89,7 @@ p{
 }
 
 .pack_name{
-    width: fit-content;
+    width: 100%;
     height: fit-content;
     font-weight: 700;
     font-size: 32px;
@@ -87,18 +97,17 @@ p{
     color: rgba(16, 133, 163, 0.98);
     padding: 0px;
     margin: auto;
-    align-self: center;
+    text-align: center;
 }
 
 .pack_rates{
-    width: fit-content;
+    width: 100%;
     height: fit-content;
     margin: auto;
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
     text-align: center;
-
     color: #000000;
     padding: 7px 0px 44px 0px;
 }
@@ -112,6 +121,7 @@ p{
     padding: 0px;
     padding-left: 20px;
     margin: 0px;
+    margin-top: 40px;
     margin-bottom: 30px;
 }
 
@@ -143,10 +153,14 @@ p{
 
 /* banner styling*/
 
-.go_premium .banner{
+.banner{
+    width: 80%;
+    height: fit-content;
+    margin: auto;
     margin-top: 120px;
-    margin-bottom: 120px;
-    position: relative;
+    background: linear-gradient(90.94deg, #42423F 2.93%, #A4C0E6 99.66%);
+    padding: 35px 0px 35px 0px;
+    color: #ffffff;
 }
 
 .banner p{
@@ -162,9 +176,6 @@ p{
     justify-content: center;
     align-items: center;
     row-gap: 10px;
-    position: absolute;
-    top: 0;
-
 }
 
 .banner_content > #early_cust{
@@ -177,8 +188,6 @@ p{
     line-height: 34px;
     text-align: center;
     letter-spacing: 0.04em;
-
-    color: #FFFFFF;
 }
 
 .banner_content > .tagline_in_stars{
@@ -195,7 +204,6 @@ p{
     text-align: center;
     letter-spacing: 0.04em;
 
-    color: #FFFFFF;
 }
 
 .banner_content > #offer_period{
@@ -207,7 +215,6 @@ p{
     line-height: 27px;
     /* identical to box height */
     text-align: center;
-    color: #FFFFFF;
 }
 
 .tagline_in_stars p{
@@ -221,3 +228,337 @@ p{
 }
 
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .go_premium{
+        width: 80%;
+        height: fit-content;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 80px;
+
+    }
+    
+    .go_premium > h2{ 
+        height: fit-content;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 34px;
+        text-align: center;
+        letter-spacing: 0.04em;
+
+    }
+
+    .go_premium > p{
+        height: fit-content;
+
+    }
+    
+    .go_premium .packs_container{
+        width: 100%;
+        height: fit-content;
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        row-gap: 50px;
+    
+    }
+    
+    .pack_detail_container{
+        width: 100%;
+        height: fit-content;
+        padding: 15px 40px 0px 40px;
+
+    
+    }
+    
+    .packs_container > .premium_pack_container{
+        width: 70%;
+        height: fit-content;
+        min-height: fit-content;
+        display: flex;
+    }
+    
+    .packs_container > .premium_plus_pack_container{
+        width: 70%;
+        height: fit-content;
+        min-height: fit-content;
+    
+    }
+    
+    .pack_name{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+    }
+    
+    .pack_rates{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .packs_container ul{
+        margin-top: 50px;
+    }
+
+    
+    .packs_container li{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    .pack_buy_now_btn{
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 30px;
+        padding-top: 8px;
+        padding-bottom: 8px;;
+    }
+    
+    /* banner styling*/
+    
+    .banner{
+        width: 80%;
+        height: fit-content;
+        margin: auto;
+        margin-top: 60px;
+        background: linear-gradient(90.94deg, #42423F 2.93%, #A4C0E6 99.66%);
+        position: relative;
+    }
+    
+    .banner p{
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .banner > .banner_content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 10px;
+    }
+    
+    .banner_content > #early_cust{
+        width: fit-content;
+        height: fit-content;
+        align-self: center;
+    
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 34px;
+        text-align: center;
+        letter-spacing: 0.04em;
+    
+        color: #FFFFFF;
+    }
+    
+    .banner_content > .tagline_in_stars{
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 15px;
+    
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 34px;
+        text-align: center;
+        letter-spacing: 0.04em;
+    
+        color: #FFFFFF;
+    }
+    
+    .banner_content > #offer_period{
+        width: fit-content;
+        height: fit-content;
+    
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 27px;
+        /* identical to box height */
+        text-align: center;
+        color: #FFFFFF;
+    }
+    
+    .tagline_in_stars p{
+        width: fit-content;
+        height: fit-content;
+    }
+    
+    .banner_content img{
+        width: 42px;
+        height: 42px;
+    }
+
+}
+
+@media screen and (max-width: 767px){
+    .go_premium{
+        width: 90%;
+        height:fit-content;
+        margin: auto;
+        margin-top: 25px;
+        margin-bottom: 50px;
+    }
+    
+    .go_premium > h2{ 
+        width: 75%;
+        margin: auto;
+        height: fit-content;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.04em;
+    }
+
+    .go_premium > p{
+        width: 95%;
+        height: fit-content;
+
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: 0.04em;        
+
+    }
+    
+    .go_premium .packs_container{
+        width: 100%;
+        height: fit-content;
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        row-gap: 40px;
+    
+    }
+    
+    .pack_detail_container{
+        width: 100%;
+        height: fit-content;
+        padding: 15px 40px 0px 40px;
+
+    
+    }
+    
+    .packs_container > .premium_pack_container{
+        width: 100%;
+        height: fit-content;
+        min-height: fit-content;
+        display: flex;
+    }
+    
+    .packs_container > .premium_plus_pack_container{
+        width: 100%;
+        height: fit-content;
+        min-height: fit-content;
+    
+    }
+
+    .go_premium .pack_name{
+        font-weight: 700;
+        font-size: 22.7914px;
+        line-height: 28px;
+    }
+
+    .go_premium .pack_rates{
+        font-weight: 500;
+        font-size: 17.0935px;
+        line-height: 21px;
+    }
+
+    .packs_container ul{
+        margin-top: 30px;
+
+    }
+
+    .packs_container li{
+        font-weight: 400;
+        font-size: 14.2446px;
+        line-height: 17px;
+    }
+
+    
+    .pack_buy_now_btn{
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 30px;
+        padding-top: 8px;
+        padding-bottom: 8px;;
+    }
+    
+    /* banner styling*/
+    
+    .banner{
+        width: 90%;
+        height: 120px;
+        margin-top: 40px;
+        position: relative;
+        background: linear-gradient(90.94deg, #42423F 2.93%, #A4C0E6 99.66%);
+    }
+    
+    .banner p{
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .banner > .banner_content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 10px;
+        position: absolute;
+        top: 0;
+    
+    }
+    
+    .banner_content > #early_cust{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: 0.04em;
+    }
+    
+    .banner_content > .tagline_in_stars{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        display: flex;
+        justify-content: center;
+        column-gap: 5px;
+
+    }
+    
+    .banner_content > #offer_period{
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 21px;
+    }
+    
+    .tagline_in_stars p{
+        width: fit-content;
+        height: fit-content;
+    }
+    
+    .banner_content img{
+        width: 17px;
+        height: 17px;
+        align-self: center;
+    }
+}

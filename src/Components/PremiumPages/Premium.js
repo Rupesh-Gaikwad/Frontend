@@ -1,12 +1,13 @@
 import React from 'react'
-import offer_bg from './images/offer_banner_bg.svg'
+import Banner from './Banner'
 import './css/premium.css'
-import star from './images/Star.svg'
+import { Link } from 'react-router-dom'
 
 function Premium() {
   return (
+      <div>
     <div className="go_premium">
-        <h2>Premium members get Co-founders <br/> 2x as fast on average.</h2>
+        <h2>Premium members get Co-founders 2x as fast on average.</h2>
         <p>Start your free 1-month trial today. Cancel anytime. We’ll send you a reminder 7 days before your trial ends.</p>
         <div className="packs_container">
             <div className="premium_pack_container">
@@ -19,7 +20,7 @@ function Premium() {
                     <li>Unlimites Profile Browsing</li>
                 </ul>
                 </div>
-                <p className="pack_buy_now_btn">Buy Now</p>
+                <Link to="/Premium"><p className="pack_buy_now_btn">Buy Now</p></Link>
             </div>
             <div className="premium_plus_pack_container">
             <div className="pack_detail_container">
@@ -33,22 +34,12 @@ function Premium() {
                     <li>We will Remind you FAQs.</li>
                 </ul>
             </div>
-            <p className="pack_buy_now_btn" style={{backgroundColor: "#1A66CA"}}>Buy Now</p>
+            <Link to="/Premium_Plus"><p className="pack_buy_now_btn" style={{backgroundColor: "#1A66CA"}}>Buy Now</p></Link>
             </div>
         </div>
 
-        <div className="banner">
-            <img src={offer_bg} alt="offer bg"/>
-            <div className="banner_content">
-                <p id="early_cust">Early Customers will get</p>
-                <div className="tagline_in_stars">
-                    <img src={star} alt="star"/>
-                    <p id="offer_heading">Extra 2 months excess for free</p>
-                    <img src={star} alt="star"/>
-                </div>
-                <p id="offer_period">Offer for limited period only</p>
-            </div>
-        </div>
+    </div>
+        <Banner/>
     </div>
   )
 }

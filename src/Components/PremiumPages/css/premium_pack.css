@@ -1,0 +1,380 @@
+.premium_pack_outer_component{
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+    margin-top: 60px;
+}
+
+
+.premium_pack_component{
+    display: flex;
+    justify-content: space-between;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+
+}
+
+.premium_pack_component p{
+    padding: 0px;
+    margin: 0px;
+}
+
+.premium_pack_component > .left{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.left > h2{
+    width: fit-content;
+    height: fit-content;
+    margin: 0px;
+    margin-bottom: 7px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height */
+    text-align: center;
+    color: rgba(16, 133, 163, 0.98);
+}
+
+.left > #tag_for_cofounders{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.left > img{
+    width: 70%;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+#premium_free_trial_btn{
+    width: fit-content;
+    background: #1A8BA7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 13px 100px;
+
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+#premium_pack_price{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+
+    margin-bottom: 8px;
+    margin-top: 70px;
+
+}
+
+#cancel_trail_info{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    color: #000000;
+}
+
+.premium_pack_component > .right{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 20px;
+}
+
+.right > .right_head{
+    margin-bottom: 40px;
+}
+
+.right > .premium_feature{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 17px;
+    margin-bottom: 25px;
+}
+
+.premium_feature >img{
+    width: 12px;
+}
+
+.banner_in_premium{
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px 0px;
+
+    background-color: black;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .premium_pack_outer_component{
+        width: 90%;
+        height: fit-content;
+        margin: auto;
+        margin-top: 50px;
+    }
+    
+    
+    .premium_pack_component{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .premium_pack_component p{
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .premium_pack_component > .left{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    
+    }
+    
+    .left > #tag_for_cofounders{
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 30px;
+        margin-top: 15px;
+        text-align: center;
+    }
+    
+    #premium_free_trial_btn{
+        width: fit-content;
+        background: #1A8BA7;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        padding: 13px 100px;
+    
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 34px;
+        text-align: center;
+        color: #FFFFFF;
+    
+    }
+    
+    #premium_pack_price{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #000000;
+    
+        margin-bottom: 8px;
+        margin-top: 70px;
+    
+    }
+    
+    #cancel_trail_info{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        /* identical to box height */
+        color: #000000;
+    }
+    
+    .premium_pack_component > .right{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0px;
+    }
+    
+    .right > .right_head{
+        margin-bottom: 40px;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .right > .premium_feature{
+        width: 70%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        column-gap: 17px;
+        margin-bottom: 10px;
+    }
+    
+    .premium_feature >img{
+        width: 12px;
+    }
+    
+    .banner_in_premium{
+        width: 80%;
+        height: fit-content;
+        margin: auto;
+        margin-top: 50px;
+        padding: 10px 0px;
+    
+        background-color: black;
+    }
+
+    .premium_pack_extra_info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .premium_pack_extra_info > p{
+        width: fit-content;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .premium_pack_outer_component{
+        width: 90%;
+        height: fit-content;
+        margin: auto;
+        margin-top: 40px;
+    }
+    
+    
+    .premium_pack_component{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .premium_pack_component p{
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .premium_pack_component > .left{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    
+    }
+
+    .left > h2{
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: 0.04em;
+    }
+    
+    .left > #tag_for_cofounders{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .left> img{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    
+    #premium_free_trial_btn{
+        width: fit-content;
+        background: #1A8BA7;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        padding: 10px 35px;
+    
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 21px;
+        text-align: center;
+        color: #FFFFFF;
+    
+    }
+    
+    #premium_pack_price{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #000000;
+    
+        margin-bottom: 8px;
+        margin-top: 80px;
+        text-align: center;
+    
+    }
+    
+    #cancel_trail_info{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        /* identical to box height */
+        color: #000000;
+        text-align: center;
+    }
+    
+    .premium_pack_component > .right{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0px;
+    }
+    
+    .right > .right_head{
+        margin-bottom: 40px;
+        text-align: center;
+
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: bold;
+
+    }
+    
+    .right > .premium_feature{
+        width: 80%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        column-gap: 17px;
+        margin-bottom: 10px;
+    }
+    
+    .premium_feature >img{
+        width: 12px;
+    }
+
+    .premium_pack_extra_info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 80px;
+    }
+
+    .premium_pack_extra_info > p{
+        width: fit-content;
+    }
+
+}
