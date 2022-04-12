@@ -33,7 +33,7 @@ function PremiumPack() {
         </div>
     </div>
     <div className="premium_pack_extra_info">
-    <Link to="#" id="premium_free_trial_btn">Start free trail today</Link>
+    <Link to="/Premium_Subscription" id="premium_free_trial_btn">Start free trail today</Link>
             <p id="premium_pack_price">After your free month, pay as little as ₹99* / month</p>
             <p id="cancel_trail_info">Cancel anytime. We'll remind you 7 days before your trial ends.</p>
     </div>

@@ -3,10 +3,12 @@
     height: fit-content;
     margin: auto;
     margin-top: 60px;
+    margin-bottom: 120px;
 }
 
 
 .premium_pack_component{
+    height: fit-content;
     display: flex;
     justify-content: space-between;
 

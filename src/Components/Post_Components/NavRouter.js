@@ -11,6 +11,7 @@ import AddEducationModal from '../User_Profile_Component/EditModals/AddEducation
 import Premium from '../PremiumPages/Premium'
 import PremiumPack from '../PremiumPages/PremiumPack'
 import PremiumPlusPack from '../PremiumPages/PremiumPlusPack'
+import Subscription from '../PremiumPages/Subscription'
 
 export default function MainPost() {
   return (
@@ -31,7 +32,8 @@ export default function MainPost() {
           <Route path="GoPremium" element={<Premium/>} />
           <Route path="Premium" element={<PremiumPack/>}/>
           <Route path="Premium_Plus" element={<PremiumPlusPack/>}/>
-          
+          <Route path="Premium_Subscription" element={<Subscription type="premium"/>}/>
+          <Route path="Plus_Subscription" element={<Subscription type="premium_plus"/>}/>
 
       </Routes>
     </BrowserRouter>

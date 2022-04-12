@@ -42,12 +42,12 @@ function PremiumPlusPack() {
         </div>
     </div>
     <div className="premium_pack_extra_info">
-    <Link to="#" id="premium_free_trial_btn">Start free trail today</Link>
+    <Link to="/Plus_Subscription" id="premium_free_trial_btn">Start free trail today</Link>
             <p id="premium_pack_price">After your free month, pay as little as ₹299* / month</p>
             <p id="cancel_trail_info">Cancel anytime. We'll remind you 7 days before your trial ends.</p>
     </div>
     </div>
-    <Banner bg={{background: "linear-gradient(93.54deg, #BA8E41 -1.13%, #FDEA7E 37.88%, #F6F0B7 49.48%, #FCEC8D 63.18%, #C0994A 100.08%)", color: "#452612"}}/>
+    <Banner sub_type="plus"/>
     </div>
   )
 }

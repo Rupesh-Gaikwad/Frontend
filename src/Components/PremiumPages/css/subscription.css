@@ -1,0 +1,810 @@
+.subscription_container{
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+.subscription{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+}
+
+.pack_info_container{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.subscription p{
+    width: fit-content;
+    height: fit-content;
+}
+
+.sub_pack_name{
+    width: 30%;
+    background: linear-gradient(180deg, #1A8BA7 0%, rgba(26, 102, 202, 0.7) 100%);
+    border-radius: 10px 0px 0px 10px;
+}
+
+.sub_pack_name > p{
+
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.sub_pack_feature{
+    width: 70%;
+}
+
+.sub_pack_feature > p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: #000000;
+    margin: auto;
+}
+
+/* Step 1 Styling */
+
+.step_1{
+    height: fit-content;
+    margin-top: 30px;
+}
+
+.step_number{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 8px;
+}
+
+.confirm_billing_inst{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 0px;
+}
+
+/* Plans */
+
+.choose_plan{
+    width: 100%;
+    height: fit-content;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.choose_plan input{
+    width: 25px;
+    height: 25px;
+}
+
+.monthly_plan, .yearly_plan{
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    column-gap: 26px;
+    padding: 20px 30px;
+
+    border: 4px solid #1A8BA7;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.monthly_plan_info, .yearly_plan_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.monthly_plan_info > h2, .yearly_plan_info > h2{
+    margin: 0px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.monthly_plan_info > p, .yearly_plan_info > p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0px;
+    margin-top: 4px;
+}
+
+/* Plan total container */
+
+.plan_total_container{
+    width: 100%;
+    height: fit-content;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-top: 50px;
+    padding: 25px 30px;
+}
+
+.plan_total_container p{
+    margin: 0px;
+    padding: 0px;
+}
+
+.total_plan_rate, .todays_total{
+    display: flex;
+    justify-content: space-between;
+}
+
+.total_divider_line{
+    width: 100%;
+    height: 0.4px;
+    background-color: #000000;
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+
+.plan_total_container #total_plan_rate_p1{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.plan_total_container #total_plan_rate_p2{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.todays_total #todays_total_p1{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.todays_total #todays_total_p2{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.plan_total_container #trail_begin_inst{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: rgba(67, 67, 67, 0.6);
+    margin-top: 40px;
+}
+
+
+/* Step 2 */
+
+.step_2{
+    height: fit-content;
+    margin-top: 60px;
+}
+
+.payment_form{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 80px 100px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.payment_form label{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.payment_form input{
+    width: 100%;
+    height: fit-content;
+    border: 0.5px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 24px;
+    padding: 8px 10px;
+    margin-top: 10px;
+    background-color: #FFFFFF;
+}
+
+.payment_form .card_extra_info{
+    display: flex;
+    column-gap: 60px;
+
+    color: rgba(67, 67, 67, 0.5);
+}
+
+.payment_form a{
+    width: 70%;
+    height: fit-content;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.payment_form #confirm_order_btn{
+    width: 100%;
+    margin: auto;
+    background: #1A8BA7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    color: #FFFFFF;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    padding: 13px 0px;
+    cursor: pointer;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1023px){
+
+    .subscription_container{
+        width: 100%;
+        margin-top: 20px;
+    
+    }
+    .subscription{
+        width: 90%;
+        margin: auto;
+        margin-top: 40px;
+    
+        font-family: 'Montserrat';
+        font-style: normal;
+    }
+    
+    .pack_info_container{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+    
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+    
+    .subscription p{
+        width: fit-content;
+        height: fit-content;
+    }
+    
+    .sub_pack_name{
+        width: 30%;
+        background: linear-gradient(180deg, #1A8BA7 0%, rgba(26, 102, 202, 0.7) 100%);
+        border-radius: 10px 0px 0px 10px;
+    }
+    
+    .sub_pack_name > p{
+    
+        font-weight: 600;
+        font-size: 21px;
+        line-height: 26px;
+    }
+    
+    .sub_pack_feature{
+        width: 70%;
+    }
+    
+    .sub_pack_feature > p{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.04em;
+    
+        color: #000000;
+        margin: auto;
+    }
+    
+    /* Step 1 Styling */
+    
+    .step_1{
+        height: fit-content;
+        margin-top: 30px;
+    }
+    
+    .step_number{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 8px;
+    }
+    
+    .confirm_billing_inst{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        margin: 0px;
+    }
+    
+    /* Plans */
+    
+    .choose_plan{
+        width: 100%;
+        height: fit-content;
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .choose_plan input{
+        width: 25px;
+        height: 25px;
+    }
+    
+    .monthly_plan, .yearly_plan{
+        width: 45%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        column-gap: 26px;
+        padding: 20px 30px;
+    
+        border: 4px solid #1A8BA7;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+    
+    .monthly_plan_info, .yearly_plan_info{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    .monthly_plan_info > h2, .yearly_plan_info > h2{
+        margin: 0px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    
+    .monthly_plan_info > p, .yearly_plan_info > p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        margin: 0px;
+        margin-top: 4px;
+    }
+    
+    /* Plan total container */
+    
+    .plan_total_container{
+        width: 100%;
+        height: fit-content;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        margin-top: 50px;
+        padding: 25px 30px;
+    }
+    
+    .plan_total_container p{
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .total_plan_rate, .todays_total{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .total_divider_line{
+        width: 100%;
+        height: 0.4px;
+        background-color: #000000;
+        margin-top: 5px;
+        margin-bottom: 40px;
+    }
+    
+    .plan_total_container #total_plan_rate_p1{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    
+    .plan_total_container #total_plan_rate_p2{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    .todays_total #todays_total_p1{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+    }
+    
+    .todays_total #todays_total_p2{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    
+    .plan_total_container #trail_begin_inst{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+    
+        color: rgba(67, 67, 67, 0.6);
+        margin-top: 40px;
+    }
+    
+    
+    /* Step 2 */
+    
+    .step_2{
+        height: fit-content;
+        margin-top: 60px;
+    }
+    
+    .payment_form{
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        padding: 80px 100px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    
+    .payment_form label{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        color: #000000;
+    }
+    
+    .payment_form input{
+        border: 0.5px solid #000000;
+        box-sizing: border-box;
+        border-radius: 10px;
+        font-size: 24px;
+        padding: 8px 10px;
+        margin-top: 10px;
+        background-color: #FFFFFF;
+    }
+    
+    .payment_form .card_extra_info{
+        display: flex;
+        column-gap: 60px;
+    
+        color: rgba(67, 67, 67, 0.5);
+    }
+    
+    .payment_form a{
+        width: 70%;
+        height: fit-content;
+        margin: auto;
+        margin-top: 30px;
+    }
+    
+    .payment_form #confirm_order_btn{
+        width: 100%;
+        margin: auto;
+        background: #1A8BA7;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        color: #FFFFFF;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 34px;
+        text-align: center;
+        padding: 13px 0px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 767px){
+
+    .subscription_container{
+        width: 100%;
+        margin-top: 20px;
+    
+    }
+
+    .subscription{
+        width: 90%;
+        margin: auto;
+        margin-top: 40px;
+    
+        font-family: 'Montserrat';
+        font-style: normal;
+    }
+    
+    .pack_info_container{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+    
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+    
+    .subscription p{
+        width: fit-content;
+        height: fit-content;
+    }
+    
+    .sub_pack_name{
+        width: 30%;
+        background: linear-gradient(180deg, #1A8BA7 0%, rgba(26, 102, 202, 0.7) 100%);
+        border-radius: 10px 0px 0px 10px;
+        padding: 5px 10px;
+    }
+    
+    .sub_pack_name > p{
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 15px;
+    }
+    
+    .sub_pack_feature{
+        width: 70%;
+        padding: 5px 10px;
+    }
+    
+    .sub_pack_feature > p{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        letter-spacing: 0.04em;
+    
+        color: #000000;
+        margin: auto;
+    }
+    
+    /* Step 1 Styling */
+    
+    .step_1{
+        height: fit-content;
+        margin-top: 30px;
+    }
+    
+    .step_number{
+        font-weight: 600;
+        font-size: 23px;
+        line-height: 28px;
+        margin-bottom: 8px;
+    }
+    
+    .confirm_billing_inst{
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 29px;
+        margin: 0px;
+    }
+    
+    /* Plans */
+    
+    .choose_plan{
+        width: 100%;
+        height: fit-content;
+        margin-top: 45px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .choose_plan input{
+        width: auto;
+        
+    }
+    
+    .monthly_plan, .yearly_plan{
+        width: 48%;
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: flex-start;
+        align-items: flex-start;
+        column-gap: 18px;
+        padding: 20px 15px;
+    
+        border: 4px solid #1A8BA7;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+    
+    .monthly_plan_info, .yearly_plan_info{
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+        justify-content: flex-start;
+    }
+    
+    .monthly_plan_info > h2, .yearly_plan_info > h2{
+        float: right;
+        margin: 0px;
+        margin-top: 5px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    
+    .monthly_plan_info > p, .yearly_plan_info > p{
+        width: 100%;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        margin: 0px;
+        margin-top: 4px;
+        margin-left: -35px;
+    }
+    
+    /* Plan total container */
+    
+    .plan_total_container{
+        width: 100%;
+        height: fit-content;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        margin-top: 50px;
+        padding: 25px 30px;
+    }
+    
+    .plan_total_container p{
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .total_plan_rate, .todays_total{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .total_divider_line{
+        width: 100%;
+        height: 0.4px;
+        background-color: #000000;
+        margin-top: 5px;
+        margin-bottom: 40px;
+    }
+    
+    .plan_total_container #total_plan_rate_p1{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    .plan_total_container #total_plan_rate_p2{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+    }
+    
+    .todays_total #todays_total_p1{
+        font-weight: 500;
+        font-size: 23px;
+        line-height: 29px;
+    }
+    
+    .todays_total #todays_total_p2{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    
+    .plan_total_container #trail_begin_inst{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+    
+        color: rgba(67, 67, 67, 0.6);
+        margin-top: 15px;
+    }
+    
+    
+    /* Step 2 */
+    
+    .step_2{
+        height: fit-content;
+        margin-top: 50px;
+    }
+    
+    .payment_form{
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        padding: 32px 17px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 18px;
+    }
+    
+    .payment_form label{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        color: #000000;
+    }
+    
+    .payment_form input{
+        border: 0.5px solid #000000;
+        box-sizing: border-box;
+        border-radius: 10px;
+        font-size: 20px;
+        padding: 8px 10px;
+        margin-top: 10px;
+        background-color: #FFFFFF;
+    }
+    
+    .payment_form .card_extra_info{
+        display: flex;
+        column-gap: 10px;
+    
+        color: rgba(67, 67, 67, 0.5);
+    }
+    
+    .payment_form a{
+        width: 70%;
+        height: fit-content;
+        margin: auto;
+        margin-top: 30px;
+    }
+    
+    .payment_form #confirm_order_btn{
+        width: 100%;
+        margin: auto;
+        background: #1A8BA7;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        color: #FFFFFF;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 21px;
+        text-align: center;
+        padding: 13px 0px;
+        cursor: pointer;
+    }
+    
+
+}
