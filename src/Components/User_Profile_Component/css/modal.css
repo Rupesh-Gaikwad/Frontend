@@ -269,11 +269,12 @@ input::placeholder, textarea::placeholder{
 
 }
 
-.user_modal_options > .option{
+.user_modal_options .option{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     column-gap: 42px;
+
 }
 
 .option > img{

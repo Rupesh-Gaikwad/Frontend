@@ -12,6 +12,9 @@ import Premium from '../PremiumPages/Premium'
 import PremiumPack from '../PremiumPages/PremiumPack'
 import PremiumPlusPack from '../PremiumPages/PremiumPlusPack'
 import Subscription from '../PremiumPages/Subscription'
+import Settings from '../User_Profile_Component/Settings'
+import DeactivationAndDeletion from '../User_Profile_Component/DeactivationAndDeletion'
+import RequestVerification from '../User_Profile_Component/RequestVerification'
 
 export default function MainPost() {
   return (
@@ -34,7 +37,9 @@ export default function MainPost() {
           <Route path="Premium_Plus" element={<PremiumPlusPack/>}/>
           <Route path="Premium_Subscription" element={<Subscription type="premium"/>}/>
           <Route path="Plus_Subscription" element={<Subscription type="premium_plus"/>}/>
-
+          <Route path="UserSettings" element={<Settings/>}/>
+          <Route path="Ac_Deactivation_and_Deletion" element={<DeactivationAndDeletion/>}/>
+          <Route path="Verification" element={<RequestVerification/>}/>
       </Routes>
     </BrowserRouter>
   </div>

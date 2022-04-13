@@ -20,13 +20,13 @@ function Subscription(props) {
         {props.type === "premium_plus" ? <Banner sub_type="plus"/> : <Banner/>}
         <div className="subscription">
 
-            {/* Pack Information */}
+            {/* Pack InhtmlFormation */}
             <div className="pack_info_container">
                 <div className="sub_pack_name">
                     <p>Premium {props.type === "premium_plus" ? "Plus" : ""} Pack Subscription</p>
                 </div>
                 <div className="sub_pack_feature">
-                    <p>Anoynmous, start your free searching for co-founder today!</p>
+                    <p>Anoynmous, start your free searching htmlFor co-founder today!</p>
                 </div>
             </div>
 
@@ -66,7 +66,7 @@ function Subscription(props) {
                         <p id="todays_total_p1">Today's Total</p>
                         <p id="todays_total_p1">₹0</p>
                     </div>
-                    <p id="trail_begin_inst">Your free trial begins on March 30, 2022 and will end on April 30, 2022. You can cancel anytime before April 30, 2022 to avoid being charged and we’ll send an email reminder 7 days before the trial ends.</p>
+                    <p id="trail_begin_inst">Your free trial begins on March 30, 2022 and will end on April 30, 2022. You can cancel anytime behtmlFore April 30, 2022 to avoid being charged and we’ll send an email reminder 7 days behtmlFore the trial ends.</p>
                 </div>
             </div>
 
@@ -76,41 +76,41 @@ function Subscription(props) {
                 <p className="step_number">STEP 2</p>
                 <p className="confirm_billing_inst">Payment</p>
 
-                {/* Payment info. form */}
+                {/* Payment info. Form */}
 
                 <div className="payment_form">
                     <div>
-                    <label for="f_name">First Name</label>
+                    <label htmlFor="f_name">First Name</label>
                     <input type="text" id="f_name"/>
                     </div>
 
                     <div>
-                    <label for="l_name">Last Name</label>
+                    <label htmlFor="l_name">Last Name</label>
                     <input type="text" id="l_name"/>
                     </div>
 
                     <div>
-                    <label for="card_num">Credit or debit card number</label>
+                    <label htmlFor="card_num">Credit or debit card number</label>
                     <input type="number" id="card_num"/>
                     </div>
 
                     <div className="card_extra_info">
                      <div>   
-                        <label for="exp_date">Expiration Date</label>
+                        <label htmlFor="exp_date">Expiration Date</label>
                         <input type="date" id="exp_date"/>
                     </div>
                     <div>
-                        <label for="security_code">Security Code</label>
+                        <label htmlFor="security_code">Security Code</label>
                         <input type="number" id="security_code"/>
                     </div>
                     </div>
                     <div>
-                        <label for="country">Country</label>
+                        <label htmlFor="country">Country</label>
                         <input type="text" id="country"/>
                     </div>
 
                     <div>
-                        <label for="postal_code">Postal Code</label>
+                        <label htmlFor="postal_code">Postal Code</label>
                         <input type="number" id="postal_code"/>
                     </div>
 

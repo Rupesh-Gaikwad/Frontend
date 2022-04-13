@@ -1,0 +1,211 @@
+.user_settings_container{
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+    margin-top: 120px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+}
+
+.user_settings_container h2{
+    width: 100%;
+    height: fit-content;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    color: #000000;
+
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000000;
+}
+
+.user_settings_container p{
+    width: fit-content;
+    height: fit-content;
+}
+.edit_info_section{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000000;
+    padding: 20px 0px;
+}
+
+.edit_info_section > .info_type_title{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.edit_info_section .edit_content{
+    width: 30%;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: rgba(0, 0, 0, 0.5);
+    border: none;
+    outline: none;
+}
+
+.edit_info_section .edit_content:focus{
+    border-bottom: 1px solid black;
+}
+
+
+.edit_btn_txt{
+    width: fit-content;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 17px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #1950B7;
+    cursor: pointer;
+
+}
+
+.edit_info_section a{
+    width: fit-content;
+    height: fit-content;
+}
+
+.edit_btn_txt img{
+    width: 24px;
+    height: 24px;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .user_settings_container{
+        width: 90%;
+        height: fit-content;
+        margin: auto;
+        margin-top: 100px;
+    }
+    
+    .user_settings_container h2{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+    
+        margin: 0px;
+        padding: 0px;
+        padding-bottom: 30px;
+    }
+
+    .edit_info_section{
+        padding: 10px 0px;
+    }
+    
+    .edit_info_section > .info_type_title{
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 37px;
+    }
+    
+    .edit_info_section .edit_content{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    
+    .edit_info_section .edit_content:focus{
+        border-bottom: 1px solid black;
+    }
+    
+    
+    .edit_btn_txt{
+        width: fit-content;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        column-gap: 17px;
+    
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: #1950B7;
+        cursor: pointer;
+    
+    }
+    
+    .edit_btn_txt img{
+        width: 20px;
+        height: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 767px){
+    .user_settings_container{
+        width: 90%;
+        height: fit-content;
+        margin: auto;
+        margin-top: 80px;
+    }
+    
+    .user_settings_container h2{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+    
+        margin: 0px;
+        padding: 0px;
+        padding-bottom: 30px;
+    }
+
+    .edit_info_section{
+        padding: 10px 0px;
+    }
+    
+    .edit_info_section > .info_type_title{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    
+    .edit_info_section .edit_content{
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+    }
+    
+    .edit_info_section .edit_content:focus{
+        border-bottom: 1px solid black;
+    }
+    
+    
+    .edit_btn_txt{
+        width: fit-content;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        column-gap: 17px;
+    
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        color: #1950B7;
+        cursor: pointer;
+    
+    }
+    
+    .edit_btn_txt > img{
+        display: none;
+        width: 15px;
+        height: 15px;
+    }
+}
