@@ -1,0 +1,116 @@
+.services_component{
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service_container{
+    width: 48%;
+    height: fit-content;
+    background: rgba(38, 50, 56, 0.04);
+    border-radius: 20px;
+    padding: 28px 52px;
+
+    display: flex;
+}
+
+.service_container .service_title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #263238;
+    margin: 0px;
+}
+
+.service_container .service_name{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    /* identical to box height */
+    color: #1085A3;
+    margin: 0px;
+}
+
+.service_container > img{
+    width: 28px;
+    height: 28px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+    .services_component{
+        width: 80%;
+        height: fit-content;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        row-gap: 28px;
+        justify-content: space-between;
+    }
+
+    .service_container{
+        width: 70%;
+        height: fit-content;
+        background: rgba(38, 50, 56, 0.04);
+        border-radius: 20px;
+        padding: 20px 40px;
+    
+        display: flex;
+    }
+    
+    .service_container .service_title{
+        font-size: 18px;
+    }
+    
+    .service_container .service_name{
+        font-size: 22px;
+    }
+    
+    .service_container > img{
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .services_component{
+        width: 90%;
+        height: fit-content;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        row-gap: 17px;
+        justify-content: space-between;
+    }
+
+    .service_container{
+        width: 80%;
+        height: fit-content;
+        background: rgba(38, 50, 56, 0.04);
+        border-radius: 20px;
+        padding: 15px 30px;
+    
+        display: flex;
+    }
+    
+    .service_container .service_title{
+        font-size: 13px;
+        line-height: 16px;
+    }
+    
+    .service_container .service_name{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    .service_container > img{
+        width: 15px;
+        height: 15px;
+    }
+}

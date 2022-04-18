@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import user_bg from './images/user_bg.svg'
+import user_bg from './images/user_profile_background.svg'
 import user_pic from './images/user_profile_pic.png'
 import './css/user.css'
 import cam from './images/Vector.png'
@@ -11,6 +11,9 @@ import pol2 from './images/Polygon2.png'
 import Section from './Section'
 import UserInfoModal from './EditModals/UserInfoModal'
 import { Link } from 'react-router-dom'
+import Services from './Services'
+import Analytics from './Analytics'
+import SubscriptionValidation from './SubscriptionValidation'
 
 
 
@@ -43,6 +46,8 @@ export default function User() {
 
 ]
 
+const isSubscriber = true;
+
   return (
     <div className="user_profile_component">
       {/* Use profile picture*/}
@@ -55,6 +60,8 @@ export default function User() {
             <img id="edit_profile_pic" src={edit} alt="edit profile pic"/>
         </div>
 
+        {isSubscriber && <SubscriptionValidation/>}
+
         {/* User Info. */}
 
         <div className="User_user_info">
@@ -65,14 +72,6 @@ export default function User() {
             </div>
             <p id="uni_loc">NY, United States</p>
             <p id="university_name">Student at University of NY</p>
-            <div className="social_count">
-              <p>843 Followers</p>
-              <p>500+ Conections</p>
-            </div>
-            <div className="choice_btns">
-              <Link to="/TryForFree"><p id="try_it_btn">TRY IT FOR FREE</p></Link>
-              <Link to="/GoPremium"><p id="buy_plan_btn">BUY SUBSCRIBTION PLAN</p></Link>
-            </div>
           </div>
 
           <div className="user_right_side">
@@ -88,6 +87,21 @@ export default function User() {
             </div>
           </div>
         </div>
+
+      <div className="social_n_choice_btns">
+        <div className="social_count">
+              <p>843 Followers</p>
+              <Link to="/TryForFree"><p id="try_it_btn">TRY IT FOR FREE</p></Link>
+        </div>
+        <div className="choice_btns">
+              <p>500+ Conections</p>
+              <Link to="/GoPremium"><p id="buy_plan_btn">BUY SUBSCRIBTION PLAN</p></Link>
+        </div>
+      </div>  
+
+      <Services/>
+
+      <Analytics/>
 
       <Section id="edit_about_me" sec_title="About me" content="My name is Mehan Fox. I graduated from MIT a month ago. Now, I am looking for my first full-time job. I have been working as a freelance web developer for the last three years and cooperated with several startups. I cannot say with 100% confidence where I see myself in five years or what my big career goal is. The world is changing rapidly, and I don’t have enough professional experience to be certain about such things." />
       <Section id="edit_education" sec_title="Education" content={education} />

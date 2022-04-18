@@ -123,27 +123,47 @@
     height: 47px;
 }
 
-.social_count{
+.social_n_choice_btns{
+    width: 80%;
+    margin: auto;
     margin-top: 40px;
     margin-bottom: 66px;
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 50px;
+}
+
+.social_count{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    column-gap: 50px;
+
+}
+
+.social_count p, .choice_btns p{
+    width: fit-content;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
     color: #1950B7;
-
-    display: flex;
-    column-gap: 140px
-}
-
-.social_count p{
-    width: fit-content;
 }
 
 .choice_btns{
+    width: fit-content;
     display: flex;
-    column-gap: 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+    column-gap: 50px;
+
+}
+
+.choice_btns > a, .social_count > a{
+    width: fit-content;
+    height: fit-content;
 }
 
 #try_it_btn{
@@ -159,6 +179,7 @@
     line-height: 24px;
     letter-spacing: 0.06em;
     color: #FFFFFF;
+
 }
 
 #buy_plan_btn{
@@ -175,6 +196,7 @@
     line-height: 24px;
     letter-spacing: 0.06em;
     color: #000000;
+
 }
 
 .user_right_side{
@@ -313,11 +335,18 @@
 
     }
 
+    .social_n_choice_btns{
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: flex-start;
+        column-gap: 50px;
+    }
+
     .social_count{
         font-size: 18px;
-        column-gap: 50px;
-        margin-top: 20px;
-        margin-bottom: 30px;
     }
 
     .choice_btns{
@@ -325,14 +354,14 @@
     }
 
     #try_it_btn{
-        font-size: 12px;
-        padding: 8px 10px;
+        font-size: 16px;
+        padding: 10px 20px;
 
     }
     
     #buy_plan_btn{
-        font-size: 12px;
-        padding: 8px 10px;
+        font-size: 16px;
+        padding: 10px 20px;
 
     }
 
@@ -432,29 +461,37 @@
         font-size: 16px;
     }
 
-    .social_count{
-        margin-top: 30px;
-        margin-bottom: 20px;
+    .social_n_choice_btns{
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 30px;
         display: flex;
-        column-gap: 45px;
+        justify-content: flex-start;
+        column-gap: 50px;
+
     }
 
-    .social_count p{
+    .social_count{
+        display: flex;
+    }
+
+    .social_count p, .choice_btns p{
         width: fit-content;
         font-size: 16px;
 
     }
 
     .choice_btns{
-        width: 100%;
+        width: fit-content;
         display: flex;
-        column-gap: 40px;
+
     }
 
     #try_it_btn, #buy_plan_btn{
         width: fit-content;
         font-size: 10px;
-        padding: 2px 10px;
+        padding: 5px 10px;
     }
 
     .cofounders_hub{

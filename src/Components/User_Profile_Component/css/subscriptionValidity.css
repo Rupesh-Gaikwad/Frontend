@@ -1,0 +1,79 @@
+.subscription_val_component{
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: rgba(26, 102, 202, 0.1);
+    border-radius: 30px;
+    padding: 15px 70px;
+}
+
+.subscription_val_component p{
+    margin: 0px;
+    padding: 0px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.subscription_val_component > #plan_validity{
+    font-weight: bold;
+    color: #000000;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .subscription_val_component{
+        padding: 28px 70px;
+    }
+
+    .subscription_val_component p{
+        margin: 0px;
+        padding: 0px;
+    
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: 0.06em;
+    
+        color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .subscription_val_component{
+        width: 90%;
+        padding: 15px 20px;
+    }
+
+
+    .subscription_val_component p{
+        margin: 0px;
+        padding: 0px;
+    
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 13px;
+        text-align: center;
+        letter-spacing: 0.06em;
+    
+        color: rgba(0, 0, 0, 0.5);
+    }
+}
